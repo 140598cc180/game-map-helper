@@ -1,0 +1,7 @@
+Beautify UI v2
+time: 2026-07-05 23:43:32.679846
+root: D:\BaiduNetdiskDownload\game-map-web
+
+[OK] app.js 首页与分类页已升级
+[OK] style.css 已追加 UI v2 美化样式
+[OK] index.html 标题与 app.js 版本号已更新

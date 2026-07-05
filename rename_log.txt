@@ -1,0 +1,55 @@
+运行时间：2026-07-05 11:49:09.862388
+项目目录：D:\BaiduNetdiskDownload\game-map-web
+
+【缩略图重命名】
+[成功] 01_北-1门.jpg  ->  thumb_01.jpg
+[成功] 02_北-4门.jpg  ->  thumb_02.jpg
+[成功] 03_北-T门.jpg  ->  thumb_03.jpg
+[成功] 04_北-凹门.jpg  ->  thumb_04.jpg
+[成功] 05_北-红对角门.jpg  ->  thumb_05.jpg
+[成功] 06_北-红门.jpg  ->  thumb_06.jpg
+[成功] 07_南-L门.jpg  ->  thumb_07.jpg
+[成功] 08_南-红门.png  ->  thumb_08.png
+[成功] 09_南-三缺一门.jpg  ->  thumb_09.jpg
+[成功] 10_南-十字门.jpg  ->  thumb_10.jpg
+[成功] 11_右-L门.png  ->  thumb_11.png
+[成功] 12_右-锤子门.jpg  ->  thumb_12.jpg
+[成功] 13_右-骑士门.png  ->  thumb_13.png
+[成功] 14_右-双L门.jpg  ->  thumb_14.jpg
+[成功] 15_右-左上右下门.jpg  ->  thumb_15.jpg
+[成功] 16_左-Y门.jpg  ->  thumb_16.jpg
+[成功] 17_左-锤子门.jpg  ->  thumb_17.jpg
+[成功] 18_左-倒T门.jpg  ->  thumb_18.jpg
+[成功] 19_左-对门.png  ->  thumb_19.png
+[成功] 20_左-对角门.png  ->  thumb_20.png
+[成功] 21_左-罐子门.png  ->  thumb_21.png
+[成功] 22_左-音叉门.jpg  ->  thumb_22.jpg
+
+【详细图重命名】
+[成功] 北-1门.jpg  ->  detail_01.jpg
+[成功] 北-4门.jpg  ->  detail_02.jpg
+[成功] 北-T门.jpg  ->  detail_03.jpg
+[成功] 北-凹门.jpg  ->  detail_04.jpg
+[成功] 北-红对角门.jpg  ->  detail_05.jpg
+[成功] 北-红门.jpg  ->  detail_06.jpg
+[成功] 南-L门.jpg  ->  detail_07.jpg
+[成功] 南-红门.png  ->  detail_08.png
+[成功] 南-三缺一门.jpg  ->  detail_09.jpg
+[成功] 南-十字门.jpg  ->  detail_10.jpg
+[成功] 右-L门.png  ->  detail_11.png
+[成功] 右-锤子门.jpg  ->  detail_12.jpg
+[成功] 右-骑士门.png  ->  detail_13.png
+[成功] 右-双L门.jpg  ->  detail_14.jpg
+[成功] 右-左上右下门.jpg  ->  detail_15.jpg
+[成功] 左-Y门.jpg  ->  detail_16.jpg
+[成功] 左-锤子门.jpg  ->  detail_17.jpg
+[成功] 左-倒T门.jpg  ->  detail_18.jpg
+[成功] 左-对T门.png  ->  detail_19.png
+[成功] 左-对角门.png  ->  detail_20.png
+[成功] 左-罐子门.png  ->  detail_21.png
+[成功] 左-音叉门.jpg  ->  detail_22.jpg
+
+【网页文件修复】
+[成功] 已重写 app.js
+[成功] 已更新 index.html，强制刷新 app.js 缓存
+[成功] 已把 service-worker.js 改名为 service-worker.bak.js，避免缓存影响

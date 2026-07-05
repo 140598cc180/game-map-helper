@@ -1,0 +1,60 @@
+time: 2026-07-05 13:58:47.614953
+
+Project: D:\BaiduNetdiskDownload\game-map-web
+
+Fix thumbnails:
+[OK] thumb exists: thumb_01.jpg
+[OK] thumb exists: thumb_02.jpg
+[OK] thumb exists: thumb_03.jpg
+[OK] thumb exists: thumb_04.jpg
+[OK] thumb exists: thumb_05.jpg
+[OK] thumb exists: thumb_06.jpg
+[OK] thumb exists: thumb_07.jpg
+[OK] thumb exists: thumb_08.png
+[OK] thumb exists: thumb_09.jpg
+[OK] thumb exists: thumb_10.jpg
+[OK] thumb exists: thumb_11.png
+[OK] thumb exists: thumb_12.jpg
+[OK] thumb exists: thumb_13.png
+[OK] thumb exists: thumb_14.jpg
+[OK] thumb exists: thumb_15.jpg
+[OK] thumb exists: thumb_16.jpg
+[OK] thumb exists: thumb_17.jpg
+[OK] thumb exists: thumb_18.jpg
+[OK] thumb exists: thumb_19.png
+[OK] thumb exists: thumb_20.png
+[OK] thumb exists: thumb_21.png
+[OK] thumb exists: thumb_22.jpg
+
+Fix details:
+[OK] detail exists: detail_01.jpg
+[OK] detail exists: detail_02.jpg
+[OK] detail exists: detail_03.jpg
+[OK] detail exists: detail_04.jpg
+[OK] detail exists: detail_05.jpg
+[OK] detail exists: detail_06.jpg
+[OK] detail exists: detail_07.jpg
+[OK] detail exists: detail_08.png
+[OK] detail exists: detail_09.jpg
+[OK] detail exists: detail_10.jpg
+[OK] detail exists: detail_11.png
+[OK] detail exists: detail_12.jpg
+[OK] detail exists: detail_13.png
+[OK] detail exists: detail_14.jpg
+[OK] detail exists: detail_15.jpg
+[OK] detail exists: detail_16.jpg
+[OK] detail exists: detail_17.jpg
+[OK] detail exists: detail_18.jpg
+[OK] detail exists: detail_19.png
+[OK] detail exists: detail_20.png
+[OK] detail exists: detail_21.png
+[OK] detail exists: detail_22.jpg
+
+Patch website:
+[OK] app.js rewritten
+[OK] index.html app.js version updated
+[OK] service-worker.js already disabled or absent
+
+Check:
+thumb_01 exists: True
+detail_01 exists: True

@@ -166,8 +166,8 @@ function detailSrc(item) {
 
 function renderHome() {
   currentDir = null;
-  els.title.textContent = "第五人格地图助手";
-  els.subtitle.textContent = "固定地图路线速查｜选择方向进入";
+  els.title.textContent = "游戏地图助手";
+  els.subtitle.textContent = "选择方向后查看对应地图";
   els.back.classList.add("hidden");
 
   const grid = document.createElement("div");
@@ -179,28 +179,20 @@ function renderHome() {
     btn.className = "direction-card";
     btn.innerHTML =
       '<span class="direction-title">' + dir.label + '</span>' +
-      '<span class="direction-count">' + count + ' 张地图路线</span>';
+      '<span class="direction-count">' + count + ' 张地图</span>';
     btn.addEventListener("click", function () {
       renderCategory(dir.key, dir.label);
     });
     grid.appendChild(btn);
   }
 
-  const info = document.createElement("section");
-  info.className = "home-info-card";
-  info.innerHTML =
-    '<div class="home-info-title">主要信息</div>' +
-    '<div class="home-info-text">选择门的方向后，点击地图缩略图查看完整路线图。绿色三角为入口，红线为主要路线，蓝色数字为推荐检查顺序。</div>' +
-    '<div class="home-meta-grid">' +
-      '<div><span>作者</span><strong>cici吃饱饱</strong></div>' +
-      '<div><span>第五人格 ID</span><strong>nku守门员</strong></div>' +
-      '<div><span>问题联系</span><strong>jayceja817@gmail.com</strong></div>' +
-    '</div>' +
-    '<div class="home-notice">' +
-      '声明：本工具仅供个人自用与学习交流，不用于任何商业用途。地图资料借鉴了 B 站 UP 主“凉哈皮”的相关图片内容，并在此基础上进行个人整理与路线标注。自制整理不易，请勿肆意传播或用于商业转载；如有不妥，请通过上方邮箱联系处理。' +
-    '</div>';
+  const tip = document.createElement("div");
+  tip.className = "tip-card";
+  tip.innerHTML =
+    '苹果手机 Safari 打开 GitHub Pages 地址后，可以点“分享 → 添加到主屏幕”。' +
+    '<br>当前图片文件名已改为英文编号格式，部署到 GitHub 更稳定。';
 
-  els.main.replaceChildren(grid, info);
+  els.main.replaceChildren(grid, tip);
 }
 
 function renderCategory(dirKey, label) {

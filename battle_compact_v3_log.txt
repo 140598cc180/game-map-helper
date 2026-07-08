@@ -1,0 +1,7 @@
+Battle Compact UI v3
+time: 2026-07-08 17:09:25.600924
+root: D:\BaiduNetdiskDownload\game-map-web
+
+[OK] app.js 已改成实战紧凑版
+[OK] style.css 已追加实战紧凑版样式
+[OK] index.html 已更新缓存版本号

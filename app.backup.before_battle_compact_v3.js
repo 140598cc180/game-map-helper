@@ -166,110 +166,139 @@ function detailSrc(item) {
 
 function renderHome() {
   currentDir = null;
-  els.title.textContent = "地图速查";
-  els.subtitle.textContent = "选择方向";
+  els.title.textContent = "第五人格地图助手";
+  els.subtitle.textContent = "固定地图路线速查 · 自用整理版";
   els.back.classList.add("hidden");
 
-  const meta = {
-    "北": ["🧭", "北门"],
-    "右": ["➡️", "右门"],
-    "左": ["⬅️", "左门"],
-    "南": ["🔻", "南门"]
+  const dirMeta = {
+    "北": { emoji: "🧭", desc: "北门地图", color: "cyan" },
+    "右": { emoji: "➡️", desc: "右门地图", color: "violet" },
+    "左": { emoji: "⬅️", desc: "左门地图", color: "emerald" },
+    "南": { emoji: "🔻", desc: "南门地图", color: "amber" },
   };
 
-  const wrap = document.createElement("section");
-  wrap.className = "battle-home";
-
-  const title = document.createElement("div");
-  title.className = "battle-title";
-  title.innerHTML =
-    '<div class="battle-title-main">🎮 第五人格地图助手</div>' +
-    '<div class="battle-title-sub">🟢入口　🔴路线　🔵顺序</div>';
+  const hero = document.createElement("section");
+  hero.className = "hero-card";
+  hero.innerHTML =
+    '<div class="hero-kicker">🎮 Identity V Route Helper</div>' +
+    '<div class="hero-title-row">' +
+      '<div>' +
+        '<h2>第五人格地图路线速查</h2>' +
+        '<p>按门的方向选择地图，快速查看推荐路线、入口与检查顺序。</p>' +
+      '</div>' +
+      '<div class="hero-badge">自用版</div>' +
+    '</div>' +
+    '<div class="hero-tags">' +
+      '<span>🟢 绿色三角 = 入口</span>' +
+      '<span>🔴 红线 = 主路线</span>' +
+      '<span>🔵 数字 = 检查顺序</span>' +
+    '</div>';
 
   const grid = document.createElement("div");
-  grid.className = "battle-dir-grid";
+  grid.className = "home-grid home-grid-polished";
 
   for (const dir of DIRS) {
     const count = MAPS.filter(item => item.dir === dir.key).length;
-    const m = meta[dir.key] || ["📍", dir.label];
+    const meta = dirMeta[dir.key] || { emoji: "📍", desc: "地图路线", color: "cyan" };
     const btn = document.createElement("button");
-    btn.className = "battle-dir-btn";
+    btn.className = "direction-card direction-card-v2 dir-" + meta.color;
     btn.innerHTML =
-      '<span class="battle-dir-emoji">' + m[0] + '</span>' +
-      '<span class="battle-dir-name">' + dir.label + '</span>' +
-      '<span class="battle-dir-count">' + count + ' 张</span>';
+      '<span class="direction-emoji">' + meta.emoji + '</span>' +
+      '<span class="direction-title">' + dir.label + '</span>' +
+      '<span class="direction-desc">' + meta.desc + '</span>' +
+      '<span class="direction-count">共 ' + count + ' 张路线图</span>' +
+      '<span class="direction-go">点击进入 →</span>';
     btn.addEventListener("click", function () {
       renderCategory(dir.key, dir.label);
     });
     grid.appendChild(btn);
   }
 
-  const info = document.createElement("div");
-  info.className = "battle-info";
+  const info = document.createElement("section");
+  info.className = "home-info-card home-info-card-v2";
   info.innerHTML =
-    '<div>作者：cici吃饱饱｜第五人格ID：nku守门员</div>' +
-    '<div>仅个人自用，非商业用途；借鉴 B 站 UP 主“凉哈皮”的图，自制不易请勿肆意传播。</div>' +
-    '<div>联系：jayceja817@gmail.com</div>';
+    '<div class="section-title">✨ 主要信息</div>' +
+    '<div class="home-meta-grid home-meta-grid-v2">' +
+      '<div><span>作者</span><strong>🍚 cici吃饱饱</strong></div>' +
+      '<div><span>第五人格 ID</span><strong>🧤 nku守门员</strong></div>' +
+      '<div><span>问题联系</span><strong>📮 jayceja817@gmail.com</strong></div>' +
+    '</div>' +
+    '<div class="home-notice home-notice-v2">' +
+      '<strong>📌 声明：</strong>本工具仅供个人自用与学习交流，不用于任何商业用途。地图资料借鉴了 B 站 UP 主“凉哈皮”的相关图片内容，并在此基础上进行个人整理与路线标注。自制整理不易，请勿肆意传播或用于商业转载；如有不妥，请通过上方邮箱联系处理。' +
+    '</div>';
 
-  wrap.append(title, grid, info);
-  els.main.replaceChildren(wrap);
+  els.main.replaceChildren(hero, grid, info);
 }
 
 function renderCategory(dirKey, label) {
   currentDir = dirKey;
-  const emoji = { "北": "🧭", "右": "➡️", "左": "⬅️", "南": "🔻" }[dirKey] || "📍";
+  const dirMeta = {
+    "北": { emoji: "🧭", tip: "北门路线", color: "cyan" },
+    "右": { emoji: "➡️", tip: "右门路线", color: "violet" },
+    "左": { emoji: "⬅️", tip: "左门路线", color: "emerald" },
+    "南": { emoji: "🔻", tip: "南门路线", color: "amber" },
+  };
+  const meta = dirMeta[dirKey] || { emoji: "📍", tip: "地图路线", color: "cyan" };
 
-  els.title.textContent = emoji + " " + label;
-  els.subtitle.textContent = "点图打开";
+  els.title.textContent = meta.emoji + " " + label;
+  els.subtitle.textContent = "点击缩略图查看完整详细图";
   els.back.classList.remove("hidden");
 
   const list = MAPS.filter(item => item.dir === dirKey);
-  const wrap = document.createElement("section");
-  wrap.className = "battle-category";
 
-  const head = document.createElement("div");
-  head.className = "battle-cat-head";
-  head.innerHTML =
-    '<div class="battle-cat-title">' + emoji + ' ' + label + '</div>' +
-    '<div class="battle-cat-rule">🟢入口 🔴路线 🔵顺序</div>' +
-    '<div class="battle-cat-count">' + list.length + '张</div>';
+  const summary = document.createElement("section");
+  summary.className = "category-summary category-" + meta.color;
+  summary.innerHTML =
+    '<div class="category-main">' +
+      '<div class="category-icon">' + meta.emoji + '</div>' +
+      '<div>' +
+        '<div class="category-title">' + label + '</div>' +
+        '<div class="category-subtitle">' + meta.tip + ' · 共 ' + list.length + ' 张地图</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="category-hint">🟢 找入口 → 🔴 跟红线 → 🔵 按数字查点</div>';
 
   const grid = document.createElement("div");
-  grid.className = "battle-map-grid";
+  grid.className = "map-grid map-grid-v2";
 
-  for (let i = 0; i < list.length; i++) {
-    const item = list[i];
+  for (let index = 0; index < list.length; index++) {
+    const item = list[index];
     const card = document.createElement("button");
-    card.className = "battle-map-card";
+    card.className = "map-card map-card-v2";
     card.setAttribute("aria-label", "查看" + item.name);
 
-    const imgBox = document.createElement("div");
-    imgBox.className = "battle-thumb";
+    const wrap = document.createElement("div");
+    wrap.className = "thumb-wrap thumb-wrap-v2";
 
     const img = document.createElement("img");
     img.loading = "lazy";
     img.alt = item.name;
     img.src = thumbSrc(item);
+
     img.onerror = function () {
-      imgBox.innerHTML = '<div class="missing-img">图未找到<br>' + item.thumb + '</div>';
+      wrap.innerHTML = '<div class="missing-img">缩略图未找到<br>' + item.thumb + '</div>';
     };
-    imgBox.appendChild(img);
+
+    wrap.appendChild(img);
 
     const name = document.createElement("div");
-    name.className = "battle-map-name";
+    name.className = "map-name map-name-v2";
     name.innerHTML =
-      '<span class="battle-map-no">' + String(i + 1).padStart(2, "0") + '</span>' +
-      '<span class="battle-map-title">' + item.name + '</span>';
+      '<span class="map-index">' + String(index + 1).padStart(2, "0") + '</span>' +
+      '<span class="map-title-text">' + item.name + '</span>';
 
-    card.append(imgBox, name);
+    const foot = document.createElement("div");
+    foot.className = "map-foot";
+    foot.innerHTML = '<span>🗺️ 查看路线</span><span>打开 →</span>';
+
+    card.append(wrap, name, foot);
     card.addEventListener("click", function () {
       openViewer(item);
     });
     grid.appendChild(card);
   }
 
-  wrap.append(head, grid);
-  els.main.replaceChildren(wrap);
+  els.main.replaceChildren(summary, grid);
 }
 
 function openViewer(item) {

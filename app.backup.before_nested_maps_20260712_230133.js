@@ -2,170 +2,134 @@ const MAPS = [
   {
     "dir": "北",
     "name": "北-1门",
-    "thumb": "北门/t1-北-1门.jpg",
-    "detail": "北门/1-北-1门.jpg"
-  },
-  {
-    "dir": "北",
-    "name": "北-1沙发门",
-    "thumb": "北门/t2-北-1沙发门.png",
-    "detail": "北门/2-北-1沙发门.png"
-  },
-  {
-    "dir": "北",
-    "name": "北-4安全门",
-    "thumb": "北门/t3-北-4安全门.png",
-    "detail": "北门/3-北-4安全门.png"
+    "thumb": "thumb_01.jpg",
+    "detail": "detail_01.jpg"
   },
   {
     "dir": "北",
     "name": "北-4门",
-    "thumb": "北门/t4-北-4门.jpg",
-    "detail": "北门/4-北-4门.jpg"
+    "thumb": "thumb_02.jpg",
+    "detail": "detail_02.jpg"
   },
   {
     "dir": "北",
     "name": "北-T门",
-    "thumb": "北门/t5-北-T门.jpg",
-    "detail": "北门/5-北-T门.jpg"
+    "thumb": "thumb_03.jpg",
+    "detail": "detail_03.jpg"
   },
   {
     "dir": "北",
     "name": "北-凹门",
-    "thumb": "北门/t6-北-凹门.jpg",
-    "detail": "北门/6-北-凹门.jpg"
+    "thumb": "thumb_04.jpg",
+    "detail": "detail_04.jpg"
   },
   {
     "dir": "北",
     "name": "北-红对角门",
-    "thumb": "北门/t7-北-红对角门.jpg",
-    "detail": "北门/7-北-红对角门.jpg"
+    "thumb": "thumb_05.jpg",
+    "detail": "detail_05.jpg"
   },
   {
     "dir": "北",
     "name": "北-红门",
-    "thumb": "北门/t8-北-红门.jpg",
-    "detail": "北门/8-北-红门.jpg"
-  },
-  {
-    "dir": "南",
-    "name": "南-十字门",
-    "thumb": "南门/t9-南-十字门.jpg",
-    "detail": "南门/9-南-十字门.jpg"
-  },
-  {
-    "dir": "南",
-    "name": "南-三缺一门",
-    "thumb": "南门/t10-南-三缺一门.jpg",
-    "detail": "南门/10-南-三缺一门.jpg"
+    "thumb": "thumb_06.jpg",
+    "detail": "detail_06.jpg"
   },
   {
     "dir": "南",
     "name": "南-L门",
-    "thumb": "南门/t11-南-L门.png",
-    "detail": "南门/11-南-L门.png"
+    "thumb": "thumb_07.jpg",
+    "detail": "detail_07.jpg"
   },
   {
     "dir": "南",
     "name": "南-红门",
-    "thumb": "南门/t12-南-红门.png",
-    "detail": "南门/12-南-红门.png"
+    "thumb": "thumb_08.png",
+    "detail": "detail_08.png"
   },
   {
     "dir": "南",
-    "name": "南-orz门",
-    "thumb": "南门/t13-南-orz门.png",
-    "detail": "南门/13-南-orz门.png"
+    "name": "南-三缺一门",
+    "thumb": "thumb_09.jpg",
+    "detail": "detail_09.jpg"
   },
   {
-    "dir": "左",
-    "name": "左-锤子门",
-    "thumb": "左门/t14-左-锤子门.png",
-    "detail": "左门/14-左-锤子门.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-倒T门",
-    "thumb": "左门/t15-左-倒T门.jpg",
-    "detail": "左门/15-左-倒T门.jpg"
-  },
-  {
-    "dir": "左",
-    "name": "左-对T门",
-    "thumb": "左门/t16-左-对T门.png",
-    "detail": "左门/16-左-对T门.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-Y青蛙房",
-    "thumb": "左门/t17-左-Y青蛙房.png",
-    "detail": "左门/17-左-Y青蛙房.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-对角门",
-    "thumb": "左门/t18-左-对角门.png",
-    "detail": "左门/18-左-对角门.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-Y门",
-    "thumb": "左门/t19-左-Y门.jpg",
-    "detail": "左门/19-左-Y门.jpg"
-  },
-  {
-    "dir": "左",
-    "name": "左-锤灯笼门",
-    "thumb": "左门/t20-左-锤灯笼门.png",
-    "detail": "左门/20-左-锤灯笼门.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-罐子门",
-    "thumb": "左门/t21-左-罐子门.png",
-    "detail": "左门/21-左-罐子门.png"
-  },
-  {
-    "dir": "左",
-    "name": "左-音叉门",
-    "thumb": "左门/22-左-音叉门.jpg",
-    "detail": "左门/22-左-音叉门.jpg"
-  },
-  {
-    "dir": "右",
-    "name": "右-左上右下门",
-    "thumb": "右门/t23-右-左上右下门.jpg",
-    "detail": "右门/23-右-左上右下门.jpg"
+    "dir": "南",
+    "name": "南-十字门",
+    "thumb": "thumb_10.jpg",
+    "detail": "detail_10.jpg"
   },
   {
     "dir": "右",
     "name": "右-L门",
-    "thumb": "右门/t24-右-L门.png",
-    "detail": "右门/24-右-L门.png"
+    "thumb": "thumb_11.png",
+    "detail": "detail_11.png"
   },
   {
     "dir": "右",
     "name": "右-锤子门",
-    "thumb": "右门/t25-右-锤子门.jpg",
-    "detail": "右门/25-右-锤子门.jpg"
+    "thumb": "thumb_12.jpg",
+    "detail": "detail_12.jpg"
   },
   {
     "dir": "右",
     "name": "右-骑士门",
-    "thumb": "右门/t26-右-骑士门.png",
-    "detail": "右门/26-右-骑士门.png"
-  },
-  {
-    "dir": "右",
-    "name": "右-三L门",
-    "thumb": "右门/t27-右-三L门.png",
-    "detail": "右门/27-右-三L门.png"
+    "thumb": "thumb_13.png",
+    "detail": "detail_13.png"
   },
   {
     "dir": "右",
     "name": "右-双L门",
-    "thumb": "右门/t28-右-双L门.jpg",
-    "detail": "右门/28-右-双L门.jpg"
+    "thumb": "thumb_14.jpg",
+    "detail": "detail_14.jpg"
+  },
+  {
+    "dir": "右",
+    "name": "右-左上右下门",
+    "thumb": "thumb_15.jpg",
+    "detail": "detail_15.jpg"
+  },
+  {
+    "dir": "左",
+    "name": "左-Y门",
+    "thumb": "thumb_16.jpg",
+    "detail": "detail_16.jpg"
+  },
+  {
+    "dir": "左",
+    "name": "左-锤子门",
+    "thumb": "thumb_17.jpg",
+    "detail": "detail_17.jpg"
+  },
+  {
+    "dir": "左",
+    "name": "左-倒T门",
+    "thumb": "thumb_18.jpg",
+    "detail": "detail_18.jpg"
+  },
+  {
+    "dir": "左",
+    "name": "左-对T门",
+    "thumb": "thumb_19.png",
+    "detail": "detail_19.png"
+  },
+  {
+    "dir": "左",
+    "name": "左-对角门",
+    "thumb": "thumb_20.png",
+    "detail": "detail_20.png"
+  },
+  {
+    "dir": "左",
+    "name": "左-罐子门",
+    "thumb": "thumb_21.png",
+    "detail": "detail_21.png"
+  },
+  {
+    "dir": "左",
+    "name": "左-音叉门",
+    "thumb": "thumb_22.jpg",
+    "detail": "detail_22.jpg"
   }
 ];
 

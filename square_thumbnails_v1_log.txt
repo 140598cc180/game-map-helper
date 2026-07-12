@@ -1,0 +1,6 @@
+Square thumbnails v1
+time: 2026-07-12 23:06:04.897766
+root: D:\副业\game-map-web
+
+[OK] style.css 已追加正方形缩略图样式
+[OK] index.html 已刷新版本号

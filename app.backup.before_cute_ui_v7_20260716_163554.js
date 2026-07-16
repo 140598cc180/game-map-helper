@@ -202,11 +202,8 @@ function detailSrc(item) {
 
 function renderHome() {
   currentDir = null;
-  document.body.classList.add("cute-home-view");
-  document.body.classList.remove("cute-category-view");
-
-  els.title.textContent = "";
-  els.subtitle.textContent = "";
+  els.title.textContent = "地图小助手";
+  els.subtitle.textContent = "选择方向";
   els.back.classList.add("hidden");
 
   const dirMeta = {
@@ -217,10 +214,10 @@ function renderHome() {
   };
 
   const page = document.createElement("section");
-  page.className = "cute-home cute-home-v7";
+  page.className = "cute-home cute-home-v5";
 
   const hero = document.createElement("section");
-  hero.className = "cute-hero cute-hero-v7";
+  hero.className = "cute-hero cute-hero-v5";
   hero.innerHTML =
     '<div class="cute-hero-sticker">🎀</div>' +
     '<div class="cute-kicker">Identity V Map Helper</div>' +
@@ -237,7 +234,7 @@ function renderHome() {
     '</div>';
 
   const grid = document.createElement("div");
-  grid.className = "cute-dir-grid cute-dir-grid-v7";
+  grid.className = "cute-dir-grid cute-dir-grid-v5";
 
   for (const dir of DIRS) {
     const count = MAPS.filter(item => item.dir === dir.key).length;
@@ -260,33 +257,35 @@ function renderHome() {
   }
 
   const author = document.createElement("section");
-  author.className = "cute-author-card cute-author-card-v7";
+  author.className = "cute-author-card";
   author.innerHTML =
-    '<div class="cute-author-top">' +
-      '<div class="cute-avatar-wrap">' +
-        '<img class="cute-avatar" src="./assets/avatar.png" alt="cici吃饱饱头像">' +
-        '<div class="cute-avatar-fallback">🍚</div>' +
-      '</div>' +
-      '<div class="cute-author-main">' +
-        '<div class="cute-author-heading">🌷 关于作者</div>' +
-        '<div class="cute-author-name">cici吃饱饱</div>' +
-        '<div class="cute-author-id">第五人格 ID：nku守门员</div>' +
-      '</div>' +
+    '<div class="cute-avatar-wrap">' +
+      '<img class="cute-avatar" src="./assets/avatar.png" alt="cici吃饱饱头像">' +
+      '<div class="cute-avatar-fallback">🍚</div>' +
     '</div>' +
-    '<div class="cute-author-tags cute-author-tags-v7">' +
-      '<span>🗺️ 原创地图整理</span>' +
-      '<span>✏️ 原创路线标注</span>' +
-      '<span>✨ AI 辅助增强</span>' +
+    '<div class="cute-author-main">' +
+      '<div class="cute-author-heading">🌷 关于作者</div>' +
+      '<div class="cute-author-name">cici吃饱饱</div>' +
+      '<div class="cute-author-id">第五人格 ID：nku守门员</div>' +
+      '<div class="cute-author-tags">' +
+        '<span>🗺️ 原创地图整理</span>' +
+        '<span>✏️ 原创路线标注</span>' +
+        '<span>✨ AI 辅助增强</span>' +
+      '</div>' +
+      '<a class="cute-contact" href="mailto:jayceja817@gmail.com">📮 jayceja817@gmail.com</a>' +
     '</div>' +
-    '<a class="cute-contact cute-contact-v7" href="mailto:jayceja817@gmail.com">📮 jayceja817@gmail.com</a>' +
-    '<div class="cute-original-note cute-original-note-v7">' +
+    '<div class="cute-original-note">' +
       '<strong>原创说明</strong>' +
       '<p>本工具中的地图整理、路线规划、界面设计及标注内容均为原创制作，部分图片与视觉效果使用 AI 辅助增强。仅供个人自用与学习交流，不用于商业用途。自制整理不易，请勿未经允许搬运、转载或用于商业传播。</p>' +
     '</div>';
 
   const avatar = author.querySelector(".cute-avatar");
   const fallback = author.querySelector(".cute-avatar-fallback");
-  avatar.addEventListener("load", function () { fallback.style.display = "none"; });
+
+  avatar.addEventListener("load", function () {
+    fallback.style.display = "none";
+  });
+
   avatar.addEventListener("error", function () {
     avatar.style.display = "none";
     fallback.style.display = "grid";
@@ -298,8 +297,6 @@ function renderHome() {
 
 function renderCategory(dirKey, label) {
   currentDir = dirKey;
-  document.body.classList.remove("cute-home-view");
-  document.body.classList.add("cute-category-view");
 
   const dirMeta = {
     "北": { theme: "pink" },
@@ -311,22 +308,28 @@ function renderCategory(dirKey, label) {
   const meta = dirMeta[dirKey] || { theme: "pink" };
   const list = MAPS.filter(item => item.dir === dirKey);
 
-  els.title.textContent = label;
-  els.subtitle.textContent = "";
+  els.title.textContent = "🐾 " + label;
+  els.subtitle.textContent = "点击缩略图查看完整地图";
   els.back.classList.remove("hidden");
 
   const page = document.createElement("section");
-  page.className = "cute-category cute-category-v7";
+  page.className = "cute-category";
 
   const head = document.createElement("section");
-  head.className = "cute-category-head cute-category-head-v7 cute-" + meta.theme;
-  head.innerHTML = '<div class="cute-category-one-line">共 ' + list.length + ' 张地图 · 点击即可打开</div>';
+  head.className = "cute-category-head cute-" + meta.theme;
+  head.innerHTML =
+    '<div class="cute-category-icon">🐾</div>' +
+    '<div class="cute-category-copy">' +
+      '<div class="cute-category-title">' + label + '</div>' +
+      '<div class="cute-category-sub">共 ' + list.length + ' 张地图 · 点击即可打开</div>' +
+    '</div>';
 
   const grid = document.createElement("div");
   grid.className = "cute-map-grid";
 
   for (let i = 0; i < list.length; i++) {
     const item = list[i];
+
     const card = document.createElement("button");
     card.className = "cute-map-card";
     card.setAttribute("aria-label", "查看" + item.name);
@@ -338,9 +341,11 @@ function renderCategory(dirKey, label) {
     img.loading = "lazy";
     img.alt = item.name;
     img.src = thumbSrc(item);
+
     img.onerror = function () {
       thumb.innerHTML = '<div class="missing-img">图片未找到<br>' + item.thumb + '</div>';
     };
+
     thumb.appendChild(img);
 
     const info = document.createElement("div");
@@ -351,7 +356,11 @@ function renderCategory(dirKey, label) {
       '<span class="cute-map-open">↗</span>';
 
     card.append(thumb, info);
-    card.addEventListener("click", function () { openViewer(item); });
+
+    card.addEventListener("click", function () {
+      openViewer(item);
+    });
+
     grid.appendChild(card);
   }
 

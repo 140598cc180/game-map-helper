@@ -1,0 +1,7 @@
+Mobile author fix v6
+time: 2026-07-16 11:40:37.435503
+root: D:\副业\game-map-web
+
+[OK] app.js 已将原创说明改为折叠面板
+[OK] style.css 已追加手机端作者区修复样式
+[OK] index.html 已刷新缓存版本号

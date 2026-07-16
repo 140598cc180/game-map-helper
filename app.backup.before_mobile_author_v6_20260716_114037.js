@@ -274,10 +274,10 @@ function renderHome() {
       '</div>' +
       '<a class="cute-contact" href="mailto:jayceja817@gmail.com">📮 jayceja817@gmail.com</a>' +
     '</div>' +
-    <details class="cute-original-note cute-original-details">' +
-      '<summary>📄 查看原创说明</summary>' +
+    '<div class="cute-original-note">' +
+      '<strong>原创说明</strong>' +
       '<p>本工具中的地图整理、路线规划、界面设计及标注内容均为原创制作，部分图片与视觉效果使用 AI 辅助增强。仅供个人自用与学习交流，不用于商业用途。自制整理不易，请勿未经允许搬运、转载或用于商业传播。</p>' +
-    '</details>;
+    '</div>';
 
   const avatar = author.querySelector(".cute-avatar");
   const fallback = author.querySelector(".cute-avatar-fallback");

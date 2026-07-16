@@ -1,9 +1,8 @@
-# macOS
+﻿*.py
+*.log
+*.zip
+*backup*
+*broken*
+__pycache__/
 .DS_Store
-
-# Windows
 Thumbs.db
-
-# IDE
-.idea/
-.vscode/

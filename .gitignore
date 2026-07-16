@@ -1,8 +1,17 @@
-﻿*.py
+﻿# 开发脚本与日志
+*.py
 *.log
 *.zip
+*.bak
 *backup*
 *broken*
 __pycache__/
+.pytest_cache/
+
+# 系统文件
 .DS_Store
 Thumbs.db
+
+# 编辑器
+.idea/
+.vscode/

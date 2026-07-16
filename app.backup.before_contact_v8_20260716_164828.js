@@ -270,10 +270,7 @@ function renderHome() {
       '<div class="cute-author-main">' +
         '<div class="cute-author-heading">🌷 关于作者</div>' +
         '<div class="cute-author-name">cici吃饱饱</div>' +
-        '<div class="cute-author-id">' +
-          '<span>第五人格 ID：nku守门员</span>' +
-          '<span class="cute-play-note">🎮 欢迎找我陪玩</span>' +
-        '</div>' +
+        '<div class="cute-author-id">第五人格 ID：nku守门员</div>' +
       '</div>' +
     '</div>' +
     '<div class="cute-author-tags cute-author-tags-v7">' +
@@ -281,10 +278,7 @@ function renderHome() {
       '<span>✏️ 原创路线标注</span>' +
       '<span>✨ AI 辅助增强</span>' +
     '</div>' +
-    '<a class="cute-contact cute-contact-v7" href="mailto:jayceja817@gmail.com">' +
-      '<span class="cute-email-text">📮 jayceja817@gmail.com</span>' +
-      '<span class="cute-qq-text">🐧 QQ：1405985556</span>' +
-    '</a>' +
+    '<a class="cute-contact cute-contact-v7" href="mailto:jayceja817@gmail.com">📮 jayceja817@gmail.com</a>' +
     '<div class="cute-original-note cute-original-note-v7">' +
       '<strong>原创说明</strong>' +
       '<p>本工具中的地图整理、路线规划、界面设计及标注内容均为原创制作，部分图片与视觉效果使用 AI 辅助增强。仅供个人自用与学习交流，不用于商业用途。自制整理不易，请勿未经允许搬运、转载或用于商业传播。</p>' +

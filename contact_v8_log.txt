@@ -1,0 +1,7 @@
+Companion and QQ contact v8
+time: 2026-07-16 16:48:28.658170
+root: D:\副业\game-map-web
+
+[OK] app.js 已加入陪玩说明和 QQ 联系方式
+[OK] style.css 已追加陪玩和 QQ 样式
+[OK] index.html 已刷新缓存版本号

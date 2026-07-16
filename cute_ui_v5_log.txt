@@ -1,0 +1,7 @@
+Cute UI v5
+time: 2026-07-16 11:34:45.360625
+root: D:\副业\game-map-web
+
+[OK] app.js 已更新；北图8张，南图5张，左图9张，右图6张
+[OK] style.css 已追加 v5 细节样式
+[OK] index.html 已更新缓存版本号

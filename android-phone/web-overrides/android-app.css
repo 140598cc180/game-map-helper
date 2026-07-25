@@ -1,0 +1,25 @@
+/* Android APK shell adjustments. Original mobile website layout is preserved. */
+
+html,
+body {
+  min-height: 100%;
+  overscroll-behavior-y: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+/* The APK is already installed, so the PWA install button is unnecessary. */
+#installBtn {
+  display: none !important;
+}
+
+/* Prevent accidental image dragging while retaining the website viewer. */
+img {
+  -webkit-user-drag: none;
+}

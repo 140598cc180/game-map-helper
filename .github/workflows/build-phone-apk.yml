@@ -1,0 +1,93 @@
+name: Build Phone Web APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "index.html"
+      - "app.js"
+      - "style.css"
+      - "manifest.json"
+      - "service-worker.js"
+      - "assets/**"
+      - "android-phone/**"
+      - ".github/workflows/build-phone-apk.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Gradle 8.13
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: "8.13"
+
+      - name: Copy the existing mobile website into the APK
+        shell: bash
+        run: |
+          set -eux
+
+          TARGET="android-phone/app/src/main/assets/www"
+          rm -rf "$TARGET"
+          mkdir -p "$TARGET"
+
+          cp index.html app.js style.css manifest.json "$TARGET/"
+          cp -R assets "$TARGET/"
+
+          if [ -f service-worker.js ]; then
+            cp service-worker.js "$TARGET/"
+          fi
+
+          cp android-phone/web-overrides/android-app.css "$TARGET/"
+          cp android-phone/web-overrides/android-app.js "$TARGET/"
+
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("android-phone/app/src/main/assets/www/index.html")
+          html = path.read_text(encoding="utf-8")
+
+          if "android-app.css" not in html:
+              html = html.replace(
+                  "</head>",
+                  '  <link rel="stylesheet" href="./android-app.css" />\n</head>'
+              )
+
+          if "android-app.js" not in html:
+              html = html.replace(
+                  "</body>",
+                  '  <script src="./android-app.js"></script>\n</body>'
+              )
+
+          path.write_text(html, encoding="utf-8")
+          PY
+
+      - name: Build Android 9 compatible APK
+        run: |
+          gradle             -p android-phone             :app:assembleDebug             --no-daemon
+
+      - name: Rename APK
+        shell: bash
+        run: |
+          mkdir -p android-phone/dist
+          cp             android-phone/app/build/outputs/apk/debug/app-debug.apk             "android-phone/dist/第五人格地图小助手-手机版-Android9.apk"
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: IdentityV-Map-Helper-Phone-Android9
+          path: android-phone/dist/第五人格地图小助手-手机版-Android9.apk
+          if-no-files-found: error

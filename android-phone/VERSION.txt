@@ -1,0 +1,4 @@
+Version: 2.0.0-phone-web
+Minimum Android: Android 9 / API 28
+UI source: existing mobile website
+Tablet split layout: removed

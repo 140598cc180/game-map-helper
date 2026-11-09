@@ -16,16 +16,20 @@
 </head>
 <body>
   <div id="app" class="app-shell">
-    <header class="topbar">
+    <header id="topbar" class="topbar hidden">
       <button id="backBtn" class="icon-btn hidden" aria-label="返回">←</button>
       <div>
         <h1 id="pageTitle">游戏地图助手</h1>
         <p id="pageSubtitle">选择方向后查看对应地图</p>
       </div>
-      <button id="installBtn" class="install-btn hidden">安装</button>
+      <button id="refreshBtn" class="icon-btn" aria-label="重新加载地图" title="重新加载地图">↻</button>
     </header>
 
     <main id="main" class="main"></main>
+    <footer class="app-footer hidden">
+      <span id="syncStatus" role="status" aria-live="polite"></span>
+      <button id="footerRefresh" class="text-btn">重新加载</button>
+    </footer>
   </div>
 
   <div id="viewer" class="viewer hidden" role="dialog" aria-modal="true">
@@ -35,10 +39,20 @@
       <button id="viewerReset" class="viewer-btn">适应</button>
     </div>
     <div id="viewerStage" class="viewer-stage">
-      <img id="viewerImg" alt="详细地图" />
+      <img id="viewerImg" alt="详细地图" class="hidden" draggable="false" />
+      <div id="viewerMessage" class="viewer-message hidden" role="status"></div>
+    </div>
+    <div class="viewer-bottom">
+      <div class="zoom-controls">
+        <button id="zoomOut" class="viewer-btn" aria-label="缩小">−</button>
+        <output id="zoomLabel" aria-label="缩放比例">100%</output>
+        <button id="zoomIn" class="viewer-btn" aria-label="放大">＋</button>
+      </div>
+      <span class="viewer-hint">滚轮 / 双指缩放 · 拖动查看 · 双击放大</span>
     </div>
   </div>
 
-  <script src="./app.js?v=contact-v8"></script>
+  <script src="./catalog.js"></script>
+  <script src="./app.js?v=series-layout-v1"></script>
 </body>
 </html>

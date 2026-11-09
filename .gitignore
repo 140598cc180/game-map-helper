@@ -1,17 +1,10 @@
-﻿# 开发脚本与日志
-*.py
-*.log
-*.zip
-*.bak
-*backup*
-*broken*
-__pycache__/
-.pytest_cache/
-
-# 系统文件
-.DS_Store
-Thumbs.db
-
-# 编辑器
-.idea/
-.vscode/
+.test-output/
+.android-build/
+.gradle/
+android-tablet/.gradle/
+android-tablet/.signing/
+android-tablet/local.properties
+android-tablet/**/build/
+android-tablet/app/src/main/assets/www/
+release/
+*.exe

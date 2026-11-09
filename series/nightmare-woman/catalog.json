@@ -1,0 +1,241 @@
+{
+  "id": "nightmare-woman",
+  "label": "噩梦之女",
+  "difficulty": "困难难度",
+  "lastUpdated": "7.25",
+  "theme": "rose",
+  "classes": [
+    {
+      "id": "class1",
+      "number": 1,
+      "label": "北门",
+      "symbol": "北",
+      "thumbnail": null,
+      "maps": [
+        {
+          "id": "map1",
+          "number": 1,
+          "label": "北图1",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t1-%E5%8C%97-1%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/1-%E5%8C%97-1%E9%97%A8.jpg"
+        },
+        {
+          "id": "map2",
+          "number": 2,
+          "label": "北图2",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t2-%E5%8C%97-1%E6%B2%99%E5%8F%91%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/2-%E5%8C%97-1%E6%B2%99%E5%8F%91%E9%97%A8.png"
+        },
+        {
+          "id": "map3",
+          "number": 3,
+          "label": "北图3",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t3-%E5%8C%97-4%E5%AE%89%E5%85%A8%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/3-%E5%8C%97-4%E5%AE%89%E5%85%A8%E9%97%A8.png"
+        },
+        {
+          "id": "map4",
+          "number": 4,
+          "label": "北图4",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t4-%E5%8C%97-4%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/4-%E5%8C%97-4%E9%97%A8.jpg"
+        },
+        {
+          "id": "map5",
+          "number": 5,
+          "label": "北图5",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t5-%E5%8C%97-T%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/5-%E5%8C%97-T%E9%97%A8.jpg"
+        },
+        {
+          "id": "map6",
+          "number": 6,
+          "label": "北图6",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t6-%E5%8C%97-%E5%87%B9%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/6-%E5%8C%97-%E5%87%B9%E9%97%A8.jpg"
+        },
+        {
+          "id": "map7",
+          "number": 7,
+          "label": "北图7",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t7-%E5%8C%97-%E7%BA%A2%E5%AF%B9%E8%A7%92%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/7-%E5%8C%97-%E7%BA%A2%E5%AF%B9%E8%A7%92%E9%97%A8.jpg"
+        },
+        {
+          "id": "map8",
+          "number": 8,
+          "label": "北图8",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8C%97%E9%97%A8/t8-%E5%8C%97-%E7%BA%A2%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8C%97%E9%97%A8/8-%E5%8C%97-%E7%BA%A2%E9%97%A8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "class2",
+      "number": 2,
+      "label": "右门",
+      "symbol": "右",
+      "thumbnail": null,
+      "maps": [
+        {
+          "id": "map1",
+          "number": 1,
+          "label": "右图1",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t23-%E5%8F%B3-%E5%B7%A6%E4%B8%8A%E5%8F%B3%E4%B8%8B%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/23-%E5%8F%B3-%E5%B7%A6%E4%B8%8A%E5%8F%B3%E4%B8%8B%E9%97%A8.jpg"
+        },
+        {
+          "id": "map2",
+          "number": 2,
+          "label": "右图2",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t24-%E5%8F%B3-L%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/24-%E5%8F%B3-L%E9%97%A8.png"
+        },
+        {
+          "id": "map3",
+          "number": 3,
+          "label": "右图3",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t25-%E5%8F%B3-%E9%94%A4%E5%AD%90%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/25-%E5%8F%B3-%E9%94%A4%E5%AD%90%E9%97%A8.jpg"
+        },
+        {
+          "id": "map4",
+          "number": 4,
+          "label": "右图4",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t26-%E5%8F%B3-%E9%AA%91%E5%A3%AB%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/26-%E5%8F%B3-%E9%AA%91%E5%A3%AB%E9%97%A8.png"
+        },
+        {
+          "id": "map5",
+          "number": 5,
+          "label": "右图5",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t27-%E5%8F%B3-%E4%B8%89L%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/27-%E5%8F%B3-%E4%B8%89L%E9%97%A8.png"
+        },
+        {
+          "id": "map6",
+          "number": 6,
+          "label": "右图6",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8F%B3%E9%97%A8/t28-%E5%8F%B3-%E5%8F%8CL%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8F%B3%E9%97%A8/28-%E5%8F%B3-%E5%8F%8CL%E9%97%A8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "class3",
+      "number": 3,
+      "label": "左门",
+      "symbol": "左",
+      "thumbnail": null,
+      "maps": [
+        {
+          "id": "map1",
+          "number": 1,
+          "label": "左图1",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t14-%E5%B7%A6-%E9%94%A4%E5%AD%90%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/14-%E5%B7%A6-%E9%94%A4%E5%AD%90%E9%97%A8.png"
+        },
+        {
+          "id": "map2",
+          "number": 2,
+          "label": "左图2",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t15-%E5%B7%A6-%E5%80%92T%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/15-%E5%B7%A6-%E5%80%92T%E9%97%A8.jpg"
+        },
+        {
+          "id": "map3",
+          "number": 3,
+          "label": "左图3",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t16-%E5%B7%A6-%E5%AF%B9T%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/16-%E5%B7%A6-%E5%AF%B9T%E9%97%A8.png"
+        },
+        {
+          "id": "map4",
+          "number": 4,
+          "label": "左图4",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t17-%E5%B7%A6-Y%E9%9D%92%E8%9B%99%E6%88%BF.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/17-%E5%B7%A6-Y%E9%9D%92%E8%9B%99%E6%88%BF.png"
+        },
+        {
+          "id": "map5",
+          "number": 5,
+          "label": "左图5",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t18-%E5%B7%A6-%E5%AF%B9%E8%A7%92%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/18-%E5%B7%A6-%E5%AF%B9%E8%A7%92%E9%97%A8.png"
+        },
+        {
+          "id": "map6",
+          "number": 6,
+          "label": "左图6",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t19-%E5%B7%A6-Y%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/19-%E5%B7%A6-Y%E9%97%A8.jpg"
+        },
+        {
+          "id": "map7",
+          "number": 7,
+          "label": "左图7",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t20-%E5%B7%A6-%E9%94%A4%E7%81%AF%E7%AC%BC%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/20-%E5%B7%A6-%E9%94%A4%E7%81%AF%E7%AC%BC%E9%97%A8.png"
+        },
+        {
+          "id": "map8",
+          "number": 8,
+          "label": "左图8",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/t21-%E5%B7%A6-%E7%BD%90%E5%AD%90%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/21-%E5%B7%A6-%E7%BD%90%E5%AD%90%E9%97%A8.png"
+        },
+        {
+          "id": "map9",
+          "number": 9,
+          "label": "左图9",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%B7%A6%E9%97%A8/22-%E5%B7%A6-%E9%9F%B3%E5%8F%89%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%B7%A6%E9%97%A8/22-%E5%B7%A6-%E9%9F%B3%E5%8F%89%E9%97%A8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "class4",
+      "number": 4,
+      "label": "南门",
+      "symbol": "南",
+      "thumbnail": null,
+      "maps": [
+        {
+          "id": "map1",
+          "number": 1,
+          "label": "南图1",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8D%97%E9%97%A8/t9-%E5%8D%97-%E5%8D%81%E5%AD%97%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8D%97%E9%97%A8/9-%E5%8D%97-%E5%8D%81%E5%AD%97%E9%97%A8.jpg"
+        },
+        {
+          "id": "map2",
+          "number": 2,
+          "label": "南图2",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8D%97%E9%97%A8/t10-%E5%8D%97-%E4%B8%89%E7%BC%BA%E4%B8%80%E9%97%A8.jpg",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8D%97%E9%97%A8/10-%E5%8D%97-%E4%B8%89%E7%BC%BA%E4%B8%80%E9%97%A8.jpg"
+        },
+        {
+          "id": "map3",
+          "number": 3,
+          "label": "南图3",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8D%97%E9%97%A8/t11-%E5%8D%97-L%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8D%97%E9%97%A8/11-%E5%8D%97-L%E9%97%A8.png"
+        },
+        {
+          "id": "map4",
+          "number": 4,
+          "label": "南图4",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8D%97%E9%97%A8/t12-%E5%8D%97-%E7%BA%A2%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8D%97%E9%97%A8/12-%E5%8D%97-%E7%BA%A2%E9%97%A8.png"
+        },
+        {
+          "id": "map5",
+          "number": 5,
+          "label": "南图5",
+          "thumbnail": "./series/nightmare-woman/assets/thumbnails/%E5%8D%97%E9%97%A8/t13-%E5%8D%97-orz%E9%97%A8.png",
+          "detail": "./series/nightmare-woman/assets/details/%E5%8D%97%E9%97%A8/13-%E5%8D%97-orz%E9%97%A8.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+
+def appVersion = new Properties()
+rootProject.file('version.properties').withInputStream { appVersion.load(it) }
+
+android {
+    namespace 'com.phosphor.maphelper'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+
+    defaultConfig {
+        applicationId 'com.phosphor.maphelper'
+        minSdk 24
+        targetSdk 36
+        versionCode appVersion.getProperty('versionCode', '1').toInteger()
+        versionName appVersion.getProperty('versionName', '1.0')
+    }
+
+    signingConfigs {
+        localInstall {
+            storeFile rootProject.file('.signing/maphelper.keystore')
+            storePassword 'android'
+            keyAlias 'maphelper'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.localInstall
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
